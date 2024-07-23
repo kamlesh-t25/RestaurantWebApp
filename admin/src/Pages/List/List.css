@@ -1,0 +1,24 @@
+.list-container{
+    margin: 30px;
+    width: 100%;
+}
+.heading-list{
+    margin-bottom: 20px;
+}
+
+.table-content{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 0.5fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid #cacaca;
+}
+
+.table-content img{
+    width: 40px;
+}
+
+.cross-btn{
+    cursor: pointer;
+}

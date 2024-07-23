@@ -1,0 +1,39 @@
+.placeOrderContainer{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name,.address1,.address2{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.sub-total,.delievery-fee,.total-cost{
+    width: 26vw;
+}
+
+.right-cost{
+    margin-top: 50px;
+}
+
+.right-cost button{
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    background-color: tomato;
+    padding: 6px 10px;
+}
+
+@media (max-width:800px){
+    .placeOrderContainer{
+        flex-direction: column;
+    }
+    input{
+        width: 50%;
+    }
+}

@@ -1,0 +1,49 @@
+.myOrders-container{
+    margin: 40px 0px;
+}
+.myorder{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.my-order{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 2fr 1fr;
+    gap: 30px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 2px solid black;
+    align-items: center;
+}
+
+.myorder img{ 
+    width: 50px;
+}
+
+.myorder p span{
+    color: tomato;
+}
+
+.myorder p b{
+    font-weight: 500;
+    color: #454545;
+}
+
+.myorder button{
+    border: none;
+    padding: 10px 0px;
+    color: #454545;
+    background-color: #ffe1e1;
+    cursor: pointer;
+}
+
+@media (max-width:900px){
+    .my-order{
+        grid-template-columns: 1fr 2fr 1fr;
+        row-gap: 5px;
+        font-size: 10px;
+    }
+    
+}

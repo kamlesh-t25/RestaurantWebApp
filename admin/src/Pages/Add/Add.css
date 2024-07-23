@@ -1,0 +1,49 @@
+.add-container{
+    padding: 15px;
+}
+
+.input-image,.product-name,.product-description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0px;
+}
+
+.price-category{
+    display: flex;
+    gap: 25px;
+    margin: 15px 0px;
+}
+.price-category p{
+    margin-bottom: 10px;
+}
+
+.add-btn{
+    padding: 6px;
+    width: 40%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.add-form input,.add-form select,.add-form textarea{
+    padding: 5px;
+    border-radius: 3px;
+}
+
+
+.active{
+    background-color: red;
+    color: black;
+}
+
+@media (max-width:600px){
+    .add-container{
+        padding: 5px;
+    }
+    .add-form input,.add-form select,.add-form textarea{
+        padding: 2px;
+        border-radius: 3px;
+        width: 80%;
+    }
+}

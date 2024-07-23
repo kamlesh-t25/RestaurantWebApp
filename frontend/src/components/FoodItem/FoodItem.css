@@ -1,0 +1,69 @@
+.food-item{
+    width: 100%;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgb(210, 202, 202);
+}
+.food-item-image{
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+}
+
+.food-item-info h2{
+    padding-left: 3px;
+    display: inline;
+    font-size: max(1.2vw,15px);
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.food-item-info img{
+    display: inline;
+    padding-right: 3px;
+    float: right;}
+
+.food-item-description{
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px 3px;
+}
+
+.food-item-price{
+    padding: 8px 3px;
+    color: orange;
+    font-size: max(1.5vw,19px);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.food-item-img{
+    position: relative;
+    cursor: c;
+}
+
+.add-icon{
+    position: absolute;
+    width: 35px;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.add-icon-red,.add-icon-green{
+    cursor: pointer;
+}
+
+.food-count-icon{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding: 6px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.food-count-icon img{
+    width: 30px;
+}

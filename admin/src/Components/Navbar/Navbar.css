@@ -1,0 +1,21 @@
+.navbar{
+    height: 13vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+}
+
+.logo{
+    width: 140px;
+}
+.profile-image{
+    width: 60px;
+}
+
+hr{
+    height: 3px;
+    background-color: antiquewhite;
+    width: 100%;
+}

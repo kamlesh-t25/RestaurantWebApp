@@ -27,6 +27,10 @@ const MyOrders = () => {
       }
     }, [token]); // Watch for changes in the token
 
+    if(data.length ==0){
+      return <h2>Loading ....</h2>;
+    }
+
   return (
     <div className='myOrders-container'>
       <h2>My orders</h2>

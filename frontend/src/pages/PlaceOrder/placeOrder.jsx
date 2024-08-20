@@ -1,8 +1,10 @@
 import React, { useContext, useState } from 'react'
 import './placeOrder.css'
 import { StoreContext } from '../../context/StoreContext'
+import {useNavigate} from 'react-router-dom';
 import axios from 'axios';
 const placeOrder = () => {
+  const navigate=useNavigate();
   const {getTotalCost,token,food_list,cartItems,url}=useContext(StoreContext);
   const [data,setData]=useState({
     firstName:"",
@@ -45,6 +47,7 @@ const placeOrder = () => {
     if(response.data.success){
       const {session_url}=response.data;
       window.location.replace(session_url);
+      // navigate("/");
     }else {
       alert("Error");
     }

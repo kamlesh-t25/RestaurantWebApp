@@ -7,7 +7,7 @@ const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
   const [foodList, setFoodList] = useState([]);
   const [token, setToken] = useState("");
-  const url = "http://localhost:4000";
+  const url=import.meta.env.VITE_BACKEND_URL;
 
   const addToCart = async (itemId) => {
     setCartItems(prev => ({
@@ -59,7 +59,7 @@ const StoreContextProvider = (props) => {
   }, [cartItems]);
 
   useEffect(() => {
-    const savedToken = localStorage.getItem("token");
+    const savedToken = localStorage.getItem("Restauranttoken");
     if (savedToken) {
       setToken(savedToken);
       loadCartData(savedToken);

@@ -2,7 +2,11 @@ import React, { useContext, useState } from 'react'
 import './Navbar.css';
 import {Link, useNavigate} from 'react-router-dom'
 import {assets} from '../../assets/assets'
+import { FaShoppingCart } from "react-icons/fa";
 import { StoreContext } from '../../context/StoreContext';
+import { FaUserTie } from "react-icons/fa";
+
+
 const Navbar = ({setLoginPopup}) => {
   const [activeState,setActiveState]=useState("home");
 
@@ -36,15 +40,18 @@ const Navbar = ({setLoginPopup}) => {
       </li>
         </ul>
         <div className="navbar-right">
-            <img src={assets.search_icon} alt="" />
+            {/* <img src={assets.search_icon} alt="" /> */}
             <div className="navbar-search-icon">
-            <Link to="/cart"><img src={assets.basket_icon} alt="" /></Link>
+
+            <Link to="/cart"><FaShoppingCart size={25} /></Link>
+
             {getTotalCost()==0?<></>:<div className="dot"></div>}
                 {/* <div className="dot"></div> */}
             </div>
             {!token?<button onClick={()=>setLoginPopup(true)}>sign in</button> :
             <div className='login-popup-list'>
-              <img src={assets.profile_icon} alt="" />
+              <FaUserTie size={25} />
+              {/* <img src={assets.profile_icon} alt="" /> */}
                 <ul className="logout-list">
                   <li onClick={()=>navigate("/myorders")}><img src={assets.bag_icon} alt="" /><p>Orders</p></li>
                   <hr />

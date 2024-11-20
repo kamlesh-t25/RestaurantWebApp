@@ -13,7 +13,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.img-container{
+.img-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +21,14 @@
     margin: 20px 0px;
     text-align: center;
     overflow-x: scroll;
+    -ms-overflow-style: none;  /* Hide scrollbar for Internet Explorer */
+    scrollbar-width: none;  /* Hide scrollbar for Firefox */
 }
+
+.img-container::-webkit-scrollbar {
+    display: none;  /* Hide scrollbar for Chrome, Safari, and newer versions of Edge */
+}
+
 
 .img-container::-webkit-scrollbar{
     display: none;
